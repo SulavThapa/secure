@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import AppNavigator from "./src/Routes/AppNavigator";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <AppNavigator
+        style={styles.container}
+     />
   );
 }
 
@@ -17,3 +18,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+console.disableYellowBox = true;
